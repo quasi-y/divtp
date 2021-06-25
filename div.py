@@ -20,9 +20,9 @@ def div(inputPath: str) -> None:
     steps: pd.DataFrame = pd.read_table(
         inputPath,
         encoding="shift_jis",
-        header=26,
+        header=27,
         usecols=[2, 3],
-        nrows=7,
+        nrows=9,
     )[::2]
 
     df = pd.read_table(
